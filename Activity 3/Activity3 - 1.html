@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+
+	<title></title>
+
+</head>
+
+<body>
+
+<img src = "images/E_SDG AC_Energy.png" alt = "bad link" />
+
+<script>
+const app = new Clarifai.App({
+ apiKey: 'f15484773bcf4a9388fa8601173f32f2'
+});
+
+
+
+
+app.models.predict("e466caa0619f444ab97497640cefc4dc", "images/E_SDG AC_Energy.png").then(
+    function(response) {
+      console.log(response)
+    },
+    function(err) {
+      // there was an error
+    }
+  );
+
+
+
+</script>
+
+</body>
+
+</html>
