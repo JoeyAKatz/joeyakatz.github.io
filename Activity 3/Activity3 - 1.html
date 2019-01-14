@@ -11,7 +11,7 @@
 
 <body>
 
-<img src = "https://raw.githubusercontent.com/JoeyAKatz/joeyakatz.github.io/master/Activity%203/images/Ptruck.png" />
+<img src = "https://raw.githubusercontent.com/JoeyAKatz/joeyakatz.github.io/master/Activity%203/images/Dwayne.jpg" />
 
 <script>
 const app = new Clarifai.App({
@@ -21,7 +21,7 @@ const app = new Clarifai.App({
 
 
 
-app.models.predict("e466caa0619f444ab97497640cefc4dc", "https://raw.githubusercontent.com/JoeyAKatz/joeyakatz.github.io/master/Activity%203/images/Ptruck.png").then(
+app.models.predict("e466caa0619f444ab97497640cefc4dc", "https://raw.githubusercontent.com/JoeyAKatz/joeyakatz.github.io/master/Activity%203/images/Dwayne.jpg").then(
     function(response) {
       console.log(response)
     },
