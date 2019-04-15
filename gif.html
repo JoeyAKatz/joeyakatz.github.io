@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+
+.parallax {
+  /* The image used */
+  background-image: url("wind.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+<!------------------>
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+<!------------------>
+
+    .standard {
+      height: 100px;
+      width: 100px;
+      background: black;
+      display: table;
+    }
+    .divcenter {
+      
+      padding-bottom: auto;
+      padding-top: 40px;
+    }
+    .sec1 {
+      background: MediumSpringGreen;
+    }
+    .sec2 {
+      background: MediumSpringGreen;
+    }
+    .sec3 {
+      background: MediumSpringGreen;
+    }
+    .sec4 {
+      background: MediumSpringGreen;
+    }
+    .sec5 {
+      background: MediumSpringGreen;
+
+    }
+    .parent p {
+          
+        vertical-align: middle;
+        text-align: center; 
+        font-size: 20px;
+      }
+      .parent div {
+        width: 80%;
+        min-width: 300px;
+        height: 400px;
+      }
+      .flexbox-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:10px;
+        margin:10px;
+        
+
+
+      }
+      .flex-container > div {
+      
+
+
+      }
+  .flexbox-containered {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding:10px;
+        margin:10px;
+      }
+  .title {
+    width: 80%;
+    min-width: 300px;
+    height: 30px;
+    padding: 10px;
+    text-align: center;
+
+      }
+
+<!------------------>
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: MediumSpringGreen;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover(active) {
+  background-color: MediumTurquoise;
+}
+.active {
+  background-color: MediumTurquoise;
+}
+
+<!------------------>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+  <h2>Mega Succ</h2>
+  <p>Ur Mom Big Gay</p>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+<div>
+
+	<ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">Goal 2</a></li>
+	  <li><a href="#contact">Goal 2</a></li>
+	  <li><a href="#about">Connections</a></li>
+	</ul>
+
+</div>
+
+
+<div class="parallax">
+
+<div class="loader"></div>
+
+
+<div class="slideshow-container">
+
+
+	<div class="mySlides fade">
+	  <img src="file:///Users/joey.katz/Desktop/E_SDG%20Climate_Action.png" style="width:50%">
+	  <div class="text"></div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="file:///Users/joey.katz/Desktop/E_SDG%20AC_Energy.png" style="width:50%">
+	  <div class="text"></div>
+	</div>
+
+</div>
+<br>
+
+<div style="text-align: center;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div>
+<div class = "flexbox-container">
+			
+	<div class = "sec5 title">
+			<p>Title</p>
+		</div>
+</div>
+
+</div>
+
+
+<div class = "parent flexbox-container">
+
+
+		<div class = "sec1 standard divcenter parent flexbox-container">
+			<p>À droite la mère du narrateur écrit à M. Eaton en francais. Sur la table, nous voyon le catalogue d'Eaton en anglais. Cela représente La mère ne parle pas anglais et que les grandes entreprises fonctionnent en francais. La famille du narrateur appartient à un minorité linguistique. Sur la chemise, on remarque un chandail des C. de M. à gauche, Le garçon est allongé dans son lit et il rêve de son nouveau chandail des C. de M. Il rêve aussi de ses copains. Il a l’air content. A l'arrière plan, on voit une boutique et une ´table pour des chevaux. Ca indique le milieu rural et modeste du québec à l’époque. </p>
+		</div>	
+
+		<div class = "sec2 standard divcenter parent flexbox-container">
+			<p>Writing 2</p>
+		</div>	
+
+		<div class = "sec3 standard divcenter parent flexbox-container">
+			<p>Writing 3</p>
+		</div>	
+
+		<div class = "sec4 standard divcenter parent flexbox-container">
+			<p>Writing 4</p>
+		</div>	
+		
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>

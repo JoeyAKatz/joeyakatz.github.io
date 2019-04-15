@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style1.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Georgia, Helvetica, sans-serif;
+}
+
+</style>
+</head>
+<body>
+
+<div>
+
+	<ul>
+	  <li><a class="active" href="#home">Home</a></li>
+	  <li><a href="#news">Goal 1</a></li>
+	  <li><a href="#contact">Goal 2</a></li>
+	  <li><a href="#about">Connections</a></li>
+	</ul>
+
+</div>
+
+
+<div class="parallax">
+
+<div class="loader"></div>
+
+
+<div class="slideshow-container">
+
+
+	<div class="mySlides fade">
+	  <img src="file:///Users/joey.katz/Desktop/E_SDG%20Climate_Action.png" style="width:50%">
+	  <div class="text"></div>
+	</div>
+
+	<div class="mySlides fade">
+	  <img src="file:///Users/joey.katz/Desktop/E_SDG%20AC_Energy.png" style="width:50%">
+	  <div class="text"></div>
+	</div>
+
+</div>
+<br>
+
+<div style="text-align: center;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<div>
+<div class = "flexbox-container">
+			
+	<div class = "sec5 title">
+			<p>Title</p>
+		</div>
+</div>
+
+</div>
+
+
+<div class = "parent flexbox-container">
+
+
+		<div class = "sec1 standard divcenter parent flexbox-container">
+			<p>À droite la mère du narrateur écrit à M. Eaton en francais. Sur la table, nous voyon le catalogue d'Eaton en anglais. Cela représente La mère ne parle pas anglais et que les grandes entreprises fonctionnent en francais. La famille du narrateur appartient à un minorité linguistique. Sur la chemise, on remarque un chandail des C. de M. à gauche, Le garçon est allongé dans son lit et il rêve de son nouveau chandail des C. de M. Il rêve aussi de ses copains. Il a l’air content. A l'arrière plan, on voit une boutique et une ´table pour des chevaux. Ca indique le milieu rural et modeste du québec à l’époque. </p>
+		</div>	
+
+		<div class = "sec2 standard divcenter parent flexbox-container">
+			<p>Writing 2</p>
+		</div>	
+
+		<div class = "sec3 standard divcenter parent flexbox-container">
+			<p>Writing 3</p>
+		</div>	
+
+		<div class = "sec4 standard divcenter parent flexbox-container">
+			<p>Writing 4</p>
+		</div>	
+		
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
